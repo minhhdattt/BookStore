@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLyBANSACHModelStoreContainer" CdmEntityContainer="QLyBANSACHEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="PassAdmin" ColumnName="PassAdmin" />
+          <ScalarProperty Name="Hoten" ColumnName="Hoten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTDATHANG">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.CTDATHANG">
+        <MappingFragment StoreEntitySet="CTDATHANG">
+          <ScalarProperty Name="SoDH" ColumnName="SoDH" />
+          <ScalarProperty Name="Masach" ColumnName="Masach" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Dongia" ColumnName="Dongia" />
+          <ScalarProperty Name="Thanhtien" ColumnName="Thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTTHAMDO">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.CTTHAMDO">
+        <MappingFragment StoreEntitySet="CTTHAMDO">
+          <ScalarProperty Name="MaCH" ColumnName="MaCH" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="Noidungtraloi" ColumnName="Noidungtraloi" />
+          <ScalarProperty Name="Solanbinhchon" ColumnName="Solanbinhchon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHUDE">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.CHUDE">
+        <MappingFragment StoreEntitySet="CHUDE">
+          <ScalarProperty Name="MaCD" ColumnName="MaCD" />
+          <ScalarProperty Name="TenChuDe" ColumnName="TenChuDe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONDATHANG">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.DONDATHANG">
+        <MappingFragment StoreEntitySet="DONDATHANG">
+          <ScalarProperty Name="SoDH" ColumnName="SoDH" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="NgayDH" ColumnName="NgayDH" />
+          <ScalarProperty Name="Trigia" ColumnName="Trigia" />
+          <ScalarProperty Name="Dagiao" ColumnName="Dagiao" />
+          <ScalarProperty Name="Ngaygiaohang" ColumnName="Ngaygiaohang" />
+          <ScalarProperty Name="Tennguoinhan" ColumnName="Tennguoinhan" />
+          <ScalarProperty Name="Diachinhan" ColumnName="Diachinhan" />
+          <ScalarProperty Name="Dienthoainhan" ColumnName="Dienthoainhan" />
+          <ScalarProperty Name="HTThanhtoan" ColumnName="HTThanhtoan" />
+          <ScalarProperty Name="HTGiaohang" ColumnName="HTGiaohang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANG">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="HoTenKH" ColumnName="HoTenKH" />
+          <ScalarProperty Name="DiachiKH" ColumnName="DiachiKH" />
+          <ScalarProperty Name="DienthoaiKH" ColumnName="DienthoaiKH" />
+          <ScalarProperty Name="TenDN" ColumnName="TenDN" />
+          <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="Gioitinh" ColumnName="Gioitinh" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Daduyet" ColumnName="Daduyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHAXUATBAN">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.NHAXUATBAN">
+        <MappingFragment StoreEntitySet="NHAXUATBAN">
+          <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
+          <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUANGCAO">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.QUANGCAO">
+        <MappingFragment StoreEntitySet="QUANGCAO">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TenCty" ColumnName="TenCty" />
+          <ScalarProperty Name="Hinhminhhoa" ColumnName="Hinhminhhoa" />
+          <ScalarProperty Name="Href" ColumnName="Href" />
+          <ScalarProperty Name="Ngaybatdau" ColumnName="Ngaybatdau" />
+          <ScalarProperty Name="Ngayhethan" ColumnName="Ngayhethan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SACH">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.SACH">
+        <MappingFragment StoreEntitySet="SACH">
+          <ScalarProperty Name="Masach" ColumnName="Masach" />
+          <ScalarProperty Name="Tensach" ColumnName="Tensach" />
+          <ScalarProperty Name="Donvitinh" ColumnName="Donvitinh" />
+          <ScalarProperty Name="Dongia" ColumnName="Dongia" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="Hinhminhhoa" ColumnName="Hinhminhhoa" />
+          <ScalarProperty Name="MaCD" ColumnName="MaCD" />
+          <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
+          <ScalarProperty Name="Ngaycapnhat" ColumnName="Ngaycapnhat" />
+          <ScalarProperty Name="Soluongban" ColumnName="Soluongban" />
+          <ScalarProperty Name="solanxem" ColumnName="solanxem" />
+          <ScalarProperty Name="moi" ColumnName="moi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACGIA">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.TACGIA">
+        <MappingFragment StoreEntitySet="TACGIA">
+          <ScalarProperty Name="MaTG" ColumnName="MaTG" />
+          <ScalarProperty Name="TenTG" ColumnName="TenTG" />
+          <ScalarProperty Name="DiachiTG" ColumnName="DiachiTG" />
+          <ScalarProperty Name="DienthoaiTG" ColumnName="DienthoaiTG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THAMDO">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.THAMDO">
+        <MappingFragment StoreEntitySet="THAMDO">
+          <ScalarProperty Name="MaCH" ColumnName="MaCH" />
+          <ScalarProperty Name="Ngaydang" ColumnName="Ngaydang" />
+          <ScalarProperty Name="Noidungthamdo" ColumnName="Noidungthamdo" />
+          <ScalarProperty Name="Tongsobinhchon" ColumnName="Tongsobinhchon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIETSACH">
+      <EntityTypeMapping TypeName="QLyBANSACHModel.VIETSACH">
+        <MappingFragment StoreEntitySet="VIETSACH">
+          <ScalarProperty Name="MaTG" ColumnName="MaTG" />
+          <ScalarProperty Name="Masach" ColumnName="Masach" />
+          <ScalarProperty Name="Vaitro" ColumnName="Vaitro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

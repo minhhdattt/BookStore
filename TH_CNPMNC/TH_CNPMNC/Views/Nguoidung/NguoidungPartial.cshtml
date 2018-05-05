@@ -1,0 +1,10 @@
+﻿<p style="color: white; font-weight: bold; text-decoration:none; display:inline-block;">
+    @if (Session["Taikhoan"] == null || Session["Taikhoan"].ToString() == "")
+    {
+        <a>@Html.ActionLink("Đăng Nhập", "DangNhap", "NguoiDung") - @Html.ActionLink("Đăng Ký", "Dangky", "NguoiDung")</a>
+    }
+    else
+    {
+        <a>@ViewBag.Taikhoan - @Html.ActionLink("Đăng xuất", "DangXuat", "NguoiDung")</a> 
+    }
+</p>

@@ -1,0 +1,53 @@
+﻿@using TH_CNPMNC.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SACH>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2 style="Text-align:center; color:red">Sách mới</h2>
+<div class="row">
+    @foreach (var sach in Model)
+    {
+        <div class="col-sm-3 col-lg-3 col-md-3">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "Bookstore", new { id = sach.Masach })">
+                    <img alt="@sach.Tensach" src="~/images/@sach.Hinhminhhoa" width="220" />
+                    <div>
+                        <br />
+                        <h4 style="text-align:center">
+                            @sach.Tensach
+                        </h4>
+                    </div>
+                    <div class="rattings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    }
+</div>
+@* Tao lien ket cac trang*@
+
+<div class="MenuTrang">
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount;
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang {
+        margin-left: 220px;
+    }
+
+        .MenuTrang li {
+            display: inline;
+        }
+</style>
+

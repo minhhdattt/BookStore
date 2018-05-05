@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Bookstore Of Minh Đạt</title>
+    <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.slidertron-1.0.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <h2 class="MSSV">Nhan Đặng Minh Đạt - 15DH110347 - Ca 3</h2>
+    
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header">
+                <div class="Login" style="float:right; color:white; font-weight:bold; display:inline-block;">
+                    <a>@Html.Action("NguoidungPartial", "Nguoidung")</a>
+                    <br>
+                    <a>@Html.Action("GiohangPartial", "Giohang")</a>
+                </div>
+
+                <div id="logo">
+                    <h1>@Html.ActionLink("Nhà sách Minh Đạt", "Index", "BookStore")</h1>
+
+                    <p>Design by <a href="https://www.facebook.com/minhhdattt" rel="nofollow">MĐ</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- end #header -->
+        
+    <div id="menu">
+        <ul>
+            <li>@Html.ActionLink("TRANG CHỦ", "Index", "BookStore")</li>
+            <li>
+                @if(Session["Taikhoanadmin"] == null || Session["Taikhoanadmin"].ToString() == "")
+                {
+                    @Html.ActionLink("Quản trị", "Login", "Admin")
+                }
+                else
+                {
+                    @Html.ActionLink("Quản trị", "Index", "Admin")
+                }
+            </li>
+
+        </ul>
+        <div style="margin-top:15px; float:right">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <input type="text" name="zoom_query" style="width:250px; border:0px solid; height:20px; padding:0px 3px; position:relative;">
+                    </td>
+                    <td>
+                        <input type="submit" value="" style="border-style: none; background: url('../../images/searchbutton3.gif') no-repeat; width: 24px; height: 20px;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <!-- end #menu -->
+        <div id="page">
+            <div id="sidebar">
+                <ul>
+                    <li>
+                        @Html.Action("ChuDe", "BookStore")
+                    </li>
+                    <li>
+                        @Html.Action("Nhaxuatban", "BookStore")
+                    </li>
+                </ul>
+            </div>
+            <!-- end #sidebar -->
+
+            <div>
+                @RenderBody()
+            </div>
+            <!-- end #content -->
+
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+        <!-- end #page -->
+    <div id="footer">
+        <p>2018. Untitled. All rights reserved. Design by MĐ.</p>
+    </div>
+</body>
+</html>
